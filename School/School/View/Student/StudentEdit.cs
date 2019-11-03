@@ -25,7 +25,20 @@ namespace School.View.Student
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            // code
+            if(
+                this.txtFirstName.Text != "" &&
+                this.txtLastName.Text != "" &&
+                this.txtEmail.Text != "" &&
+                this.txtClass.Text != ""
+                )
+            {
+                MessageBox.Show("Ca fonctionne", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearInput.clearInput(this);
+            }
+            else
+            {
+                MessageBox.Show("Les champs ne peuvent être vide", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

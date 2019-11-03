@@ -78,12 +78,12 @@ namespace School
 
         private void btnTeacher_Click(object sender, EventArgs e)
         {
-            this.OpenForms(new TeacherHome());
+            this.OpenForms(new TeacherIndex());
         }
 
         private void btnClass_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Le button 'Class' fonctionne.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.OpenForms(new ClassIndex());
         }
     }
 }

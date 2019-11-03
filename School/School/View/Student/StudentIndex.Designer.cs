@@ -35,6 +35,8 @@
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.studentTableAdapter = new School.SchoolDatabaseDataSetTableAdapters.StudentTableAdapter();
             this.pnlHeadMenu = new System.Windows.Forms.Panel();
+            this.pnlAdd = new System.Windows.Forms.Panel();
+            this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlStudentData = new System.Windows.Forms.Panel();
             this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnStudentData = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -43,16 +45,12 @@
             this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlEdit = new System.Windows.Forms.Panel();
             this.btnEdit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pnlAdd = new System.Windows.Forms.Panel();
-            this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.schoolDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             this.pnlHeadMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
-            this.pnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,14 +91,60 @@
             this.pnlHeadMenu.Size = new System.Drawing.Size(1255, 100);
             this.pnlHeadMenu.TabIndex = 0;
             // 
+            // pnlAdd
+            // 
+            this.pnlAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
+            this.pnlAdd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pnlAdd.Location = new System.Drawing.Point(872, 68);
+            this.pnlAdd.Name = "pnlAdd";
+            this.pnlAdd.Size = new System.Drawing.Size(136, 5);
+            this.pnlAdd.TabIndex = 5;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Activecolor = System.Drawing.Color.Empty;
+            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdd.BorderRadius = 0;
+            this.btnAdd.ButtonText = "New Student";
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAdd.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAdd.Iconimage = null;
+            this.btnAdd.Iconimage_right = null;
+            this.btnAdd.Iconimage_right_Selected = null;
+            this.btnAdd.Iconimage_Selected = null;
+            this.btnAdd.IconMarginLeft = 0;
+            this.btnAdd.IconMarginRight = 0;
+            this.btnAdd.IconRightVisible = true;
+            this.btnAdd.IconRightZoom = 0D;
+            this.btnAdd.IconVisible = true;
+            this.btnAdd.IconZoom = 90D;
+            this.btnAdd.IsTab = false;
+            this.btnAdd.Location = new System.Drawing.Point(872, 24);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Normalcolor = System.Drawing.Color.Empty;
+            this.btnAdd.OnHovercolor = System.Drawing.Color.Empty;
+            this.btnAdd.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnAdd.selected = false;
+            this.btnAdd.Size = new System.Drawing.Size(136, 50);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "New Student";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.Textcolor = System.Drawing.Color.Gray;
+            this.btnAdd.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // pnlStudentData
             // 
             this.pnlStudentData.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlStudentData.BackColor = System.Drawing.Color.Black;
             this.pnlStudentData.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlStudentData.Location = new System.Drawing.Point(389, 65);
+            this.pnlStudentData.Location = new System.Drawing.Point(394, 69);
             this.pnlStudentData.Name = "pnlStudentData";
-            this.pnlStudentData.Size = new System.Drawing.Size(136, 10);
+            this.pnlStudentData.Size = new System.Drawing.Size(136, 5);
             this.pnlStudentData.TabIndex = 3;
             // 
             // btnSearch
@@ -110,7 +154,7 @@
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Image = global::School.Properties.Resources.search;
             this.btnSearch.ImageActive = null;
-            this.btnSearch.Location = new System.Drawing.Point(12, 31);
+            this.btnSearch.Location = new System.Drawing.Point(21, 25);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(45, 44);
             this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,7 +184,7 @@
             this.btnStudentData.IconVisible = true;
             this.btnStudentData.IconZoom = 90D;
             this.btnStudentData.IsTab = false;
-            this.btnStudentData.Location = new System.Drawing.Point(389, 25);
+            this.btnStudentData.Location = new System.Drawing.Point(394, 25);
             this.btnStudentData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStudentData.Name = "btnStudentData";
             this.btnStudentData.Normalcolor = System.Drawing.Color.Empty;
@@ -167,7 +211,7 @@
             this.txtSearch.LineIdleColor = System.Drawing.Color.Gray;
             this.txtSearch.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(73, 31);
+            this.txtSearch.Location = new System.Drawing.Point(82, 25);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(218, 44);
@@ -180,9 +224,9 @@
             this.pnlDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pnlDelete.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlDelete.Location = new System.Drawing.Point(706, 64);
+            this.pnlDelete.Location = new System.Drawing.Point(711, 68);
             this.pnlDelete.Name = "pnlDelete";
-            this.pnlDelete.Size = new System.Drawing.Size(136, 10);
+            this.pnlDelete.Size = new System.Drawing.Size(136, 5);
             this.pnlDelete.TabIndex = 1;
             // 
             // btnDelete
@@ -206,7 +250,7 @@
             this.btnDelete.IconVisible = true;
             this.btnDelete.IconZoom = 90D;
             this.btnDelete.IsTab = false;
-            this.btnDelete.Location = new System.Drawing.Point(706, 24);
+            this.btnDelete.Location = new System.Drawing.Point(711, 24);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Normalcolor = System.Drawing.Color.Empty;
@@ -226,9 +270,9 @@
             this.pnlEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
             this.pnlEdit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlEdit.Location = new System.Drawing.Point(546, 64);
+            this.pnlEdit.Location = new System.Drawing.Point(551, 68);
             this.pnlEdit.Name = "pnlEdit";
-            this.pnlEdit.Size = new System.Drawing.Size(136, 10);
+            this.pnlEdit.Size = new System.Drawing.Size(136, 5);
             this.pnlEdit.TabIndex = 0;
             // 
             // btnEdit
@@ -252,7 +296,7 @@
             this.btnEdit.IconVisible = true;
             this.btnEdit.IconZoom = 90D;
             this.btnEdit.IsTab = false;
-            this.btnEdit.Location = new System.Drawing.Point(546, 24);
+            this.btnEdit.Location = new System.Drawing.Point(551, 24);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Normalcolor = System.Drawing.Color.Empty;
@@ -267,23 +311,8 @@
             this.btnEdit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // bunifuSeparator1
-            // 
-            this.bunifuSeparator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(0, -18);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(1255, 43);
-            this.bunifuSeparator1.TabIndex = 0;
-            this.bunifuSeparator1.Transparency = 255;
-            this.bunifuSeparator1.Vertical = false;
-            // 
             // pnlContainer
             // 
-            this.pnlContainer.Controls.Add(this.bunifuSeparator1);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContainer.Location = new System.Drawing.Point(0, 100);
             this.pnlContainer.Name = "pnlContainer";
@@ -304,52 +333,6 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // pnlAdd
-            // 
-            this.pnlAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
-            this.pnlAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlAdd.Location = new System.Drawing.Point(867, 64);
-            this.pnlAdd.Name = "pnlAdd";
-            this.pnlAdd.Size = new System.Drawing.Size(136, 10);
-            this.pnlAdd.TabIndex = 5;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Activecolor = System.Drawing.Color.Empty;
-            this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.BorderRadius = 0;
-            this.btnAdd.ButtonText = "New Student";
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAdd.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAdd.Iconimage = null;
-            this.btnAdd.Iconimage_right = null;
-            this.btnAdd.Iconimage_right_Selected = null;
-            this.btnAdd.Iconimage_Selected = null;
-            this.btnAdd.IconMarginLeft = 0;
-            this.btnAdd.IconMarginRight = 0;
-            this.btnAdd.IconRightVisible = true;
-            this.btnAdd.IconRightZoom = 0D;
-            this.btnAdd.IconVisible = true;
-            this.btnAdd.IconZoom = 90D;
-            this.btnAdd.IsTab = false;
-            this.btnAdd.Location = new System.Drawing.Point(867, 24);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Normalcolor = System.Drawing.Color.Empty;
-            this.btnAdd.OnHovercolor = System.Drawing.Color.Empty;
-            this.btnAdd.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnAdd.selected = false;
-            this.btnAdd.Size = new System.Drawing.Size(136, 50);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.Text = "New Student";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAdd.Textcolor = System.Drawing.Color.Gray;
-            this.btnAdd.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // StudentIndex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -361,12 +344,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentIndex";
             this.Text = "StudentHome";
-            this.Load += new System.EventHandler(this.StudentHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.schoolDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             this.pnlHeadMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
-            this.pnlContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
@@ -380,7 +361,6 @@
         private SchoolDatabaseDataSetTableAdapters.StudentTableAdapter studentTableAdapter;
         private System.Windows.Forms.Panel pnlHeadMenu;
         private System.Windows.Forms.Panel pnlContainer;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuFlatButton btnEdit;
         private System.Windows.Forms.Panel pnlEdit;
         private System.Windows.Forms.Panel pnlDelete;

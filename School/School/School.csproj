@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -54,6 +54,16 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>C:\Users\garya\OneDrive\Bureau\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -68,7 +78,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ConnectionDatabase.cs" />
-    <Compile Include="Class\Student.cs" />
+    <Compile Include="Class\StudentClass.cs" />
+    <Compile Include="Class\TeacherClass.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,11 +125,29 @@
     <Compile Include="View\Student\StudentIndex.Designer.cs">
       <DependentUpon>StudentIndex.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Teacher\TeacherHome.cs">
+    <Compile Include="View\Teacher\TeacherAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Teacher\TeacherHome.Designer.cs">
-      <DependentUpon>TeacherHome.cs</DependentUpon>
+    <Compile Include="View\Teacher\TeacherAdd.Designer.cs">
+      <DependentUpon>TeacherAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Teacher\TeacherDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Teacher\TeacherDataTable.Designer.cs">
+      <DependentUpon>TeacherDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Teacher\TeacherEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Teacher\TeacherEdit.Designer.cs">
+      <DependentUpon>TeacherEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Teacher\TeacherIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Teacher\TeacherIndex.Designer.cs">
+      <DependentUpon>TeacherIndex.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
@@ -148,9 +177,19 @@
     <EmbeddedResource Include="View\Student\StudentIndex.resx">
       <DependentUpon>StudentIndex.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Teacher\TeacherHome.resx">
-      <DependentUpon>TeacherHome.cs</DependentUpon>
+    <EmbeddedResource Include="View\Teacher\TeacherAdd.resx">
+      <DependentUpon>TeacherAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Teacher\TeacherDataTable.resx">
+      <DependentUpon>TeacherDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Teacher\TeacherEdit.resx">
+      <DependentUpon>TeacherEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Teacher\TeacherIndex.resx">
+      <DependentUpon>TeacherIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -166,6 +205,7 @@
     <None Include="SchoolDatabaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>SchoolDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="SchoolDatabaseDataSet.xss">
       <DependentUpon>SchoolDatabaseDataSet.xsd</DependentUpon>
@@ -182,6 +222,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>SchoolDatabase.mdf</DependentUpon>
     </Content>
+    <Content Include="MetroFramework.txt" />
     <None Include="Resources\search.png" />
     <None Include="Resources\cancel.png" />
     <None Include="Resources\school.png" />

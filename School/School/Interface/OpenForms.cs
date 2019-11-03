@@ -9,6 +9,7 @@ namespace School.Interface
 {
     static class OpenForms
     {
+        /*
         public static void openForms(Form form, object formS)
         {
             if (form.pnlContainer.Controls.Count > 0)
@@ -23,5 +24,6 @@ namespace School.Interface
             form.pnlContainer.Tag = fs;
             fs.Show();
         }
+        */
     }
 }

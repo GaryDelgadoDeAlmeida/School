@@ -13,6 +13,7 @@ namespace School.Class
         public SqlDataAdapter dataAdapter = new SqlDataAdapter();
         public SqlConnection sqlConnection = new SqlConnection();
         public SqlCommand sqlCommand = new SqlCommand();
-        public string locate = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\garya\Documents\Developpement\Application\C#\School\School\SchoolDatabaseDataSet.xsd';Integrated Security=True";
+        public string locate = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\garya\\Documents\\Developpement\\Application\\C#\\School\\School\\Database\\SchoolDatabase.mdf;Integrated Security=True";
+        /*public string locate = "D:\\garya\\Documents\\Developpement\\Application\\C#\\School\\School\\SchoolDatabaseDataSet.xsd";*/
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using School.Class;
 
 namespace School.View.Student
 {
@@ -25,7 +26,20 @@ namespace School.View.Student
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            // code
+            if(
+                this.txtFirstName.Text != "" &&
+                this.txtLastName.Text != "" &&
+                this.txtEmail.Text != "" &&
+                this.txtClass.Text != ""
+                )
+            {
+                MessageBox.Show(StudentClass.addStudent(this.txtFirstName.Text, this.txtLastName.Text, this.txtEmail.Text, this.txtClass.Text), "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearInput.clearInput(this);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez vérifié que tous les champs sont bien remplis", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

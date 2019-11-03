@@ -1,4 +1,5 @@
-﻿using System;
+﻿using School.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,12 @@ namespace School.View.Student
 {
     public partial class StudentIndex : Form
     {
+        private StudentDataTable studentData;
         public StudentIndex()
         {
             InitializeComponent();
-            this.OpenForms(new StudentDataTable());
+            this.studentData = new StudentDataTable();
+            this.OpenForms(this.studentData);
         }
 
         private void OpenForms(object formS)
@@ -33,13 +36,6 @@ namespace School.View.Student
             fs.Show();
         }
 
-        private void StudentHome_Load(object sender, EventArgs e)
-        {
-            // TODO: cette ligne de code charge les données dans la table 'schoolDatabaseDataSet.Student'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.studentTableAdapter.Fill(this.schoolDatabaseDataSet.Student);
-
-        }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Vous avez recherché : " + this.txtSearch.Text + " dans la barre de recherche.", "Succès", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -47,17 +43,39 @@ namespace School.View.Student
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            this.OpenForms(new StudentEdit());
+            StudentEdit studentEdit = new StudentEdit();
+
+            if(studentData.dataGridStudent.SelectedRows.Count > 0)
+            {
+                studentEdit.txtIdentifiant.Text = this.studentData.dataGridStudent.CurrentRow.Cells[0].Value.ToString();
+                studentEdit.txtFirstName.Text = this.studentData.dataGridStudent.CurrentRow.Cells[1].Value.ToString();
+                studentEdit.txtLastName.Text = this.studentData.dataGridStudent.CurrentRow.Cells[2].Value.ToString();
+                studentEdit.txtEmail.Text = this.studentData.dataGridStudent.CurrentRow.Cells[3].Value.ToString();
+                studentEdit.txtClass.Text = this.studentData.dataGridStudent.CurrentRow.Cells[4].Value.ToString();
+                this.OpenForms(studentEdit);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez sélectionner une ligne pour l'éditer", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Vous avez cliqué sur 'Delete'", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (studentData.dataGridStudent.SelectedRows.Count > 0)
+            {
+                MessageBox.Show(StudentClass.deleteStudent(this.studentData.dataGridStudent.CurrentRow.Cells[0].Value.ToString()));
+            }
+            else
+            {
+                MessageBox.Show("Veuillez sélectionner une ligne pour l'étudiant", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnStudentData_Click(object sender, EventArgs e)
         {
-            this.OpenForms(new StudentDataTable());
+            this.studentData = new StudentDataTable();
+            this.OpenForms(this.studentData);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
