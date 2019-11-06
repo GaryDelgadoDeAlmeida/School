@@ -1,5 +1,6 @@
 ﻿using School.View.Student;
 using School.View.Teacher;
+using School.View.Classroom;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,18 @@ namespace School.Interface
             formS.txtLastName.Clear();
             formS.txtEmail.Clear();
             formS.txtProfession.Clear();
+        }
+
+        public static void clearInput(ClassroomAdd formS)
+        {
+            formS.txtName.Clear();
+            formS.txtPromotionDate.Value = new DateTime();
+        }
+
+        public static void clearInput(ClassroomEdit formS)
+        {
+            formS.txtName.Clear();
+            formS.txtPromotionDate.Value = new DateTime();
         }
     }
 }

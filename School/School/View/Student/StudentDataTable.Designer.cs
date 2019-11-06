@@ -47,6 +47,9 @@
             // 
             // dataGridStudent
             // 
+            this.dataGridStudent.AllowUserToAddRows = false;
+            this.dataGridStudent.AllowUserToDeleteRows = false;
+            this.dataGridStudent.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridStudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridStudent.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -170,6 +173,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn classDataGridViewTextBoxColumn;
+        public Bunifu.Framework.UI.BunifuCustomDataGrid dataGridStudent;
         private SchoolDatabaseDataSet schoolDatabaseDataSet;
         private System.Windows.Forms.BindingSource studentBindingSource;
         private SchoolDatabaseDataSetTableAdapters.StudentTableAdapter studentTableAdapter;
@@ -178,6 +182,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        public Bunifu.Framework.UI.BunifuCustomDataGrid dataGridStudent;
     }
 }

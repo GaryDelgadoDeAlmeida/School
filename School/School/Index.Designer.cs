@@ -32,27 +32,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchoolApp));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlHead = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.pnlContainer = new System.Windows.Forms.Panel();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnStudent = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnClass = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnTeacher = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMinimize = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnNormalize = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMaximize = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.picLogo = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnStudent = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnClass = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnTeacher = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlHead.SuspendLayout();
-            this.pnlMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNormalize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -75,6 +75,71 @@
             this.pnlHead.Size = new System.Drawing.Size(1505, 50);
             this.pnlHead.TabIndex = 0;
             // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.Image = global::School.Properties.Resources.minimizeWindow;
+            this.btnMinimize.ImageActive = null;
+            this.btnMinimize.Location = new System.Drawing.Point(1391, 7);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Zoom = 10;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnNormalize
+            // 
+            this.btnNormalize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnNormalize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.btnNormalize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNormalize.Image = global::School.Properties.Resources.normalScreen;
+            this.btnNormalize.ImageActive = null;
+            this.btnNormalize.Location = new System.Drawing.Point(1427, 8);
+            this.btnNormalize.Name = "btnNormalize";
+            this.btnNormalize.Size = new System.Drawing.Size(30, 30);
+            this.btnNormalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnNormalize.TabIndex = 2;
+            this.btnNormalize.TabStop = false;
+            this.btnNormalize.Visible = false;
+            this.btnNormalize.Zoom = 10;
+            this.btnNormalize.Click += new System.EventHandler(this.btnNormalize_Click);
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximize.Image = global::School.Properties.Resources.fullScreen;
+            this.btnMaximize.ImageActive = null;
+            this.btnMaximize.Location = new System.Drawing.Point(1427, 8);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
+            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximize.TabIndex = 3;
+            this.btnMaximize.TabStop = false;
+            this.btnMaximize.Zoom = 10;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = global::School.Properties.Resources.deleteSign;
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(1463, 8);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 2;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
@@ -86,6 +151,21 @@
             this.bunifuCustomLabel1.TabIndex = 2;
             this.bunifuCustomLabel1.Text = "School - Bunifu UI";
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuImageButton1.Image = global::School.Properties.Resources.menuFilled;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 8);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 30);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 1;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
             // bunifuDragControl1
             // 
             this.bunifuDragControl1.Fixed = true;
@@ -96,7 +176,7 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.pnlMenu.Controls.Add(this.bunifuImageButton2);
+            this.pnlMenu.Controls.Add(this.picLogo);
             this.pnlMenu.Controls.Add(this.btnStudent);
             this.pnlMenu.Controls.Add(this.btnClass);
             this.pnlMenu.Controls.Add(this.btnTeacher);
@@ -106,27 +186,20 @@
             this.pnlMenu.Size = new System.Drawing.Size(250, 690);
             this.pnlMenu.TabIndex = 1;
             // 
-            // pnlContainer
+            // picLogo
             // 
-            this.pnlContainer.BackColor = System.Drawing.Color.White;
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContainer.Location = new System.Drawing.Point(250, 50);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1255, 690);
-            this.pnlContainer.TabIndex = 2;
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.bunifuImageButton2.Image = global::School.Properties.Resources.school;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(33, 31);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(175, 152);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 3;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
+            this.picLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
+            this.picLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picLogo.Image = global::School.Properties.Resources.school;
+            this.picLogo.ImageActive = null;
+            this.picLogo.Location = new System.Drawing.Point(33, 31);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(175, 152);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 3;
+            this.picLogo.TabStop = false;
+            this.picLogo.Zoom = 10;
+            this.picLogo.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // btnStudent
             // 
@@ -236,85 +309,14 @@
             this.btnTeacher.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTeacher.Click += new System.EventHandler(this.btnTeacher_Click);
             // 
-            // btnMinimize
+            // pnlContainer
             // 
-            this.btnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.Image = global::School.Properties.Resources.minimizeWindow;
-            this.btnMinimize.ImageActive = null;
-            this.btnMinimize.Location = new System.Drawing.Point(1391, 7);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimize.TabIndex = 2;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Zoom = 10;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnNormalize
-            // 
-            this.btnNormalize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnNormalize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.btnNormalize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNormalize.Image = global::School.Properties.Resources.normalScreen;
-            this.btnNormalize.ImageActive = null;
-            this.btnNormalize.Location = new System.Drawing.Point(1427, 8);
-            this.btnNormalize.Name = "btnNormalize";
-            this.btnNormalize.Size = new System.Drawing.Size(30, 30);
-            this.btnNormalize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnNormalize.TabIndex = 2;
-            this.btnNormalize.TabStop = false;
-            this.btnNormalize.Visible = false;
-            this.btnNormalize.Zoom = 10;
-            this.btnNormalize.Click += new System.EventHandler(this.btnNormalize_Click);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximize.Image = global::School.Properties.Resources.fullScreen;
-            this.btnMaximize.ImageActive = null;
-            this.btnMaximize.Location = new System.Drawing.Point(1427, 8);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
-            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximize.TabIndex = 3;
-            this.btnMaximize.TabStop = false;
-            this.btnMaximize.Zoom = 10;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Image = global::School.Properties.Resources.deleteSign;
-            this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(1463, 8);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(30, 30);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 2;
-            this.btnClose.TabStop = false;
-            this.btnClose.Zoom = 10;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(93)))));
-            this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton1.Image = global::School.Properties.Resources.menuFilled;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(12, 8);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(30, 30);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 1;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.pnlContainer.BackColor = System.Drawing.Color.White;
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContainer.Location = new System.Drawing.Point(250, 50);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(1255, 690);
+            this.pnlContainer.TabIndex = 2;
             // 
             // SchoolApp
             // 
@@ -330,13 +332,13 @@
             this.Text = "School";
             this.pnlHead.ResumeLayout(false);
             this.pnlHead.PerformLayout();
-            this.pnlMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNormalize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            this.pnlMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,7 +359,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnStudent;
         private Bunifu.Framework.UI.BunifuFlatButton btnClass;
         private System.Windows.Forms.Panel pnlContainer;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
+        private Bunifu.Framework.UI.BunifuImageButton picLogo;
     }
 }
 

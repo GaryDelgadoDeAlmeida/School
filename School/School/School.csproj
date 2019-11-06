@@ -65,6 +65,7 @@
       <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -79,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Class\ConnectionDatabase.cs" />
     <Compile Include="Class\StudentClass.cs" />
+    <Compile Include="Class\ClassroomClass.cs" />
     <Compile Include="Class\TeacherClass.cs" />
     <Compile Include="Index.cs">
       <SubType>Form</SubType>
@@ -87,7 +89,6 @@
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\ClearInput.cs" />
-    <Compile Include="Interface\OpenForms.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SchoolDatabaseDataSet.Designer.cs">
@@ -95,11 +96,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SchoolDatabaseDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="View\Class\ClassIndex.cs">
+    <Compile Include="View\Classroom\ClassroomAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Class\ClassIndex.Designer.cs">
-      <DependentUpon>ClassIndex.cs</DependentUpon>
+    <Compile Include="View\Classroom\ClassroomAdd.Designer.cs">
+      <DependentUpon>ClassroomAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Classroom\ClassroomDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Classroom\ClassroomDataTable.Designer.cs">
+      <DependentUpon>ClassroomDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Classroom\ClassroomEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Classroom\ClassroomEdit.Designer.cs">
+      <DependentUpon>ClassroomEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Classroom\ClassroomIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Classroom\ClassroomIndex.Designer.cs">
+      <DependentUpon>ClassroomIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Student\StudentAdd.cs">
       <SubType>Form</SubType>
@@ -162,8 +187,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="View\Class\ClassIndex.resx">
-      <DependentUpon>ClassIndex.cs</DependentUpon>
+    <EmbeddedResource Include="View\Classroom\ClassroomAdd.resx">
+      <DependentUpon>ClassroomAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Classroom\ClassroomDataTable.resx">
+      <DependentUpon>ClassroomDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Classroom\ClassroomEdit.resx">
+      <DependentUpon>ClassroomEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Classroom\ClassroomIndex.resx">
+      <DependentUpon>ClassroomIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Student\StudentAdd.resx">
       <DependentUpon>StudentAdd.cs</DependentUpon>

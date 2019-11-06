@@ -96,7 +96,7 @@
             this.pnlAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(0)))));
             this.pnlAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlAdd.Location = new System.Drawing.Point(872, 68);
+            this.pnlAdd.Location = new System.Drawing.Point(872, 62);
             this.pnlAdd.Name = "pnlAdd";
             this.pnlAdd.Size = new System.Drawing.Size(136, 5);
             this.pnlAdd.TabIndex = 5;
@@ -122,7 +122,7 @@
             this.btnAdd.IconVisible = true;
             this.btnAdd.IconZoom = 90D;
             this.btnAdd.IsTab = false;
-            this.btnAdd.Location = new System.Drawing.Point(872, 24);
+            this.btnAdd.Location = new System.Drawing.Point(872, 18);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Normalcolor = System.Drawing.Color.Empty;
@@ -142,7 +142,7 @@
             this.pnlStudentData.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlStudentData.BackColor = System.Drawing.Color.Black;
             this.pnlStudentData.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlStudentData.Location = new System.Drawing.Point(394, 69);
+            this.pnlStudentData.Location = new System.Drawing.Point(394, 63);
             this.pnlStudentData.Name = "pnlStudentData";
             this.pnlStudentData.Size = new System.Drawing.Size(136, 5);
             this.pnlStudentData.TabIndex = 3;
@@ -184,7 +184,7 @@
             this.btnStudentData.IconVisible = true;
             this.btnStudentData.IconZoom = 90D;
             this.btnStudentData.IsTab = false;
-            this.btnStudentData.Location = new System.Drawing.Point(394, 25);
+            this.btnStudentData.Location = new System.Drawing.Point(394, 19);
             this.btnStudentData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStudentData.Name = "btnStudentData";
             this.btnStudentData.Normalcolor = System.Drawing.Color.Empty;
@@ -224,7 +224,7 @@
             this.pnlDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pnlDelete.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlDelete.Location = new System.Drawing.Point(711, 68);
+            this.pnlDelete.Location = new System.Drawing.Point(711, 62);
             this.pnlDelete.Name = "pnlDelete";
             this.pnlDelete.Size = new System.Drawing.Size(136, 5);
             this.pnlDelete.TabIndex = 1;
@@ -250,7 +250,7 @@
             this.btnDelete.IconVisible = true;
             this.btnDelete.IconZoom = 90D;
             this.btnDelete.IsTab = false;
-            this.btnDelete.Location = new System.Drawing.Point(711, 24);
+            this.btnDelete.Location = new System.Drawing.Point(711, 18);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Normalcolor = System.Drawing.Color.Empty;
@@ -270,7 +270,7 @@
             this.pnlEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
             this.pnlEdit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.pnlEdit.Location = new System.Drawing.Point(551, 68);
+            this.pnlEdit.Location = new System.Drawing.Point(551, 62);
             this.pnlEdit.Name = "pnlEdit";
             this.pnlEdit.Size = new System.Drawing.Size(136, 5);
             this.pnlEdit.TabIndex = 0;
@@ -296,7 +296,7 @@
             this.btnEdit.IconVisible = true;
             this.btnEdit.IconZoom = 90D;
             this.btnEdit.IsTab = false;
-            this.btnEdit.Location = new System.Drawing.Point(551, 24);
+            this.btnEdit.Location = new System.Drawing.Point(551, 18);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Normalcolor = System.Drawing.Color.Empty;

@@ -15,7 +15,6 @@ D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.S
 D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Student.StudentAdd.resources
 D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Student.StudentDataTable.resources
 D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Student.StudentEdit.resources
-D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Class.ClassIndex.resources
 D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Student.StudentIndex.resources
 D:\garya\Documents\Developpement\Application\C#\School\School\bin\Debug\MetroFramework.dll
 D:\garya\Documents\Developpement\Application\C#\School\School\bin\Debug\MetroFramework.Fonts.dll
@@ -23,3 +22,8 @@ D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.V
 D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Teacher.TeacherIndex.resources
 D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Teacher.TeacherAdd.resources
 D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Teacher.TeacherEdit.resources
+D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Home.resources
+D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Classroom.ClassroomAdd.resources
+D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Classroom.ClassroomDataTable.resources
+D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Classroom.ClassroomEdit.resources
+D:\garya\Documents\Developpement\Application\C#\School\School\obj\Debug\School.View.Classroom.ClassroomIndex.resources

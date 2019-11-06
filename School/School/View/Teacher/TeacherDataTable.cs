@@ -21,7 +21,8 @@ namespace School.View.Teacher
         {
             // TODO: cette ligne de code charge les données dans la table 'schoolDatabaseDataSet.Teacher'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.teacherTableAdapter.Fill(this.schoolDatabaseDataSet.Teacher);
-
+            // TODO: cette ligne de code charge les données dans la table 'schoolDatabaseDataSet.Teacher'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.teacherTableAdapter.Fill(this.schoolDatabaseDataSet.Teacher);
         }
     }
 }

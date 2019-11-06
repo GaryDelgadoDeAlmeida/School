@@ -9,15 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using School.View.Student;
 using School.View.Teacher;
-using School.View.Class;
+using School.View.Classroom;
+using School.View;
 
 namespace School
 {
     public partial class SchoolApp : Form
     {
+        private Home home;
         public SchoolApp()
         {
             InitializeComponent();
+            this.home = new Home();
+            this.OpenForms(this.home);
         }
 
         private void OpenForms(object formS)
@@ -61,13 +65,26 @@ namespace School
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            if(this.pnlMenu.Size.Width == 188)
+            int y = this.picLogo.Location.Y;
+
+            if (this.pnlMenu.Size.Width == 188)
             {
+                // Menu
                 this.pnlMenu.Size = new Size(50, this.pnlMenu.Size.Height);
+
+                // Pic Logo
+                this.picLogo.Location = new Point(10, this.picLogo.Location.Y);
+                this.picLogo.Size = new Size(30, this.picLogo.Size.Height);
             }
             else
             {
+                // Menu
                 this.pnlMenu.Size = new Size(188, this.pnlMenu.Size.Height);
+
+                // Pic Logo
+                this.picLogo.Location = new Point(5, y);
+                this.picLogo.Size = new Size(175, this.picLogo.Size.Height);
+                this.picLogo.Zoom = 10;
             }
         }
 
@@ -83,7 +100,12 @@ namespace School
 
         private void btnClass_Click(object sender, EventArgs e)
         {
-            this.OpenForms(new ClassIndex());
+            this.OpenForms(new ClassroomIndex());
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            this.OpenForms(this.home);
         }
     }
 }

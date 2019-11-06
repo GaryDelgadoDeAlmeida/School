@@ -22,8 +22,6 @@ namespace School.View.Student
         {
             // TODO: cette ligne de code charge les données dans la table 'schoolDatabaseDataSet.Student'. Vous pouvez la déplacer ou la supprimer selon les besoins.
             this.studentTableAdapter.Fill(this.schoolDatabaseDataSet.Student);
-            // TODO: cette ligne de code charge les données dans la table 'schoolDatabaseDataSet.Student'. Vous pouvez la déplacer ou la supprimer selon les besoins.
-            this.studentTableAdapter.Fill(this.schoolDatabaseDataSet.Student);
             var bunifuDataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Controls.Add(bunifuDataGrid);
 

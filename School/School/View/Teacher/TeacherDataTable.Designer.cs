@@ -32,11 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridTeacher = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.professionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.teacherBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.schoolDatabaseDataSet = new School.SchoolDatabaseDataSet();
             this.teacherTableAdapter = new School.SchoolDatabaseDataSetTableAdapters.TeacherTableAdapter();
@@ -47,6 +47,9 @@
             // 
             // dataGridTeacher
             // 
+            this.dataGridTeacher.AllowUserToAddRows = false;
+            this.dataGridTeacher.AllowUserToDeleteRows = false;
+            this.dataGridTeacher.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridTeacher.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridTeacher.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -67,64 +70,71 @@
             this.dataGridTeacher.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridTeacher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridTeacher.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
-            this.emailDataGridViewTextBoxColumn,
-            this.professionDataGridViewTextBoxColumn});
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
             this.dataGridTeacher.DataSource = this.teacherBindingSource;
             this.dataGridTeacher.DoubleBuffered = true;
             this.dataGridTeacher.EnableHeadersVisualStyles = false;
             this.dataGridTeacher.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dataGridTeacher.HeaderForeColor = System.Drawing.SystemColors.Control;
             this.dataGridTeacher.Location = new System.Drawing.Point(12, 12);
+            this.dataGridTeacher.MultiSelect = false;
             this.dataGridTeacher.Name = "dataGridTeacher";
+            this.dataGridTeacher.ReadOnly = true;
             this.dataGridTeacher.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridTeacher.RowHeadersWidth = 51;
             this.dataGridTeacher.RowTemplate.Height = 24;
+            this.dataGridTeacher.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridTeacher.Size = new System.Drawing.Size(1231, 566);
             this.dataGridTeacher.TabIndex = 0;
             // 
-            // idDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn6
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 125;
             // 
-            // firstNameDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn7
             // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
-            this.firstNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            this.firstNameDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "FirstName";
+            this.dataGridViewTextBoxColumn7.HeaderText = "FirstName";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 125;
             // 
-            // lastNameDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn8
             // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
-            this.lastNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            this.lastNameDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "LastName";
+            this.dataGridViewTextBoxColumn8.HeaderText = "LastName";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 125;
             // 
-            // emailDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn9
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 125;
             // 
-            // professionDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn10
             // 
-            this.professionDataGridViewTextBoxColumn.DataPropertyName = "Profession";
-            this.professionDataGridViewTextBoxColumn.HeaderText = "Profession";
-            this.professionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.professionDataGridViewTextBoxColumn.Name = "professionDataGridViewTextBoxColumn";
-            this.professionDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Profession";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Profession";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 125;
             // 
             // teacherBindingSource
             // 
@@ -158,14 +168,24 @@
         }
 
         #endregion
-        private SchoolDatabaseDataSet schoolDatabaseDataSet;
-        private System.Windows.Forms.BindingSource teacherBindingSource;
-        private SchoolDatabaseDataSetTableAdapters.TeacherTableAdapter teacherTableAdapter;
+        public Bunifu.Framework.UI.BunifuCustomDataGrid dataGridTeacher;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn professionDataGridViewTextBoxColumn;
-        public Bunifu.Framework.UI.BunifuCustomDataGrid dataGridTeacher;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private SchoolDatabaseDataSet schoolDatabaseDataSet;
+        private System.Windows.Forms.BindingSource teacherBindingSource;
+        private SchoolDatabaseDataSetTableAdapters.TeacherTableAdapter teacherTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
     }
 }
